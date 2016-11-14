@@ -150,7 +150,7 @@ public class StageViewer extends View implements GameConstants {
         //If game status is RUNNING, then invalidate canvas after sleep time
         if (GameStatus.equals(Status.RUNNING)) {
             if (Snake.size() > numberOfColumns) {
-                sleepTime = DEFAULT_SLEEP_TIME + 100;
+                sleepTime = DEFAULT_SLEEP_TIME + 30;
             }
             try {
                 Thread.sleep(sleepTime);
